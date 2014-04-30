@@ -11,11 +11,11 @@ A **useful** category on `NSLayoutConstraint` containing a set of helper methods
 
 It is designed to be **as easy to use as possible to integrate and use** to speed up everyday development tasks. All the methods are well documented and described using doxygen style. 
 
-Furthermore, the category comes along with **a small demo project** where you can see how to use helper methods for creating and debugging constraints. Current version of the category includes following helper methods:
+Furthermore, the category comes along with **a small demo project** where you can see how to use helper methods for creating and debugging constraints.
 
                    DESC
 
-  s.homepage     = "https://github.com/r3econ/UIView-Animation-Extensions"
+  s.homepage     = "https://github.com/r3econ/NSLayout-Constraint-Extensions"
   s.license      = "CC0"
 
   s.author             = { "Rafal Sroka" => "rafal.sroka.it@gmail.com" }
@@ -23,7 +23,7 @@ Furthermore, the category comes along with **a small demo project** where you ca
 
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "https://github.com/r3econ/UIView-Animation-Extensions.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/r3econ/NSLayout-Constraint-Extensions", :tag => "1.0.0" }
 
   s.source_files  = "Classes", "Classes/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
