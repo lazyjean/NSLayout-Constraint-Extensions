@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B53AF72B1911384000C29B17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53AF72A1911384000C29B17 /* Foundation.framework */; };
+		B53AF72D1911384000C29B17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53AF72C1911384000C29B17 /* CoreGraphics.framework */; };
+		B53AF72F1911384000C29B17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53AF72E1911384000C29B17 /* UIKit.framework */; };
+		B53AF7351911384000C29B17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B53AF7331911384000C29B17 /* InfoPlist.strings */; };
+		B53AF7371911384000C29B17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7361911384000C29B17 /* main.m */; };
+		B53AF73B1911384000C29B17 /* RAFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF73A1911384000C29B17 /* RAFAppDelegate.m */; };
+		B53AF73E1911384000C29B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53AF73C1911384000C29B17 /* Main.storyboard */; };
+		B53AF7411911384000C29B17 /* RAFMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7401911384000C29B17 /* RAFMasterViewController.m */; };
+		B53AF7441911384000C29B17 /* RAFDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7431911384000C29B17 /* RAFDetailViewController.m */; };
+		B53AF7461911384000C29B17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53AF7451911384000C29B17 /* Images.xcassets */; };
+		B53AF74D1911384000C29B17 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53AF74C1911384000C29B17 /* XCTest.framework */; };
+		B53AF74E1911384000C29B17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53AF72A1911384000C29B17 /* Foundation.framework */; };
+		B53AF74F1911384000C29B17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53AF72E1911384000C29B17 /* UIKit.framework */; };
+		B53AF7571911384000C29B17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B53AF7551911384000C29B17 /* InfoPlist.strings */; };
+		B53AF7591911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7581911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.m */; };
+		B53AF7641911390600C29B17 /* NSLayoutConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7631911390600C29B17 /* NSLayoutConstraint+Extensions.m */; };
+		B53AF7651911390600C29B17 /* NSLayoutConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7631911390600C29B17 /* NSLayoutConstraint+Extensions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B53AF7501911384000C29B17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53AF71F1911384000C29B17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B53AF7261911384000C29B17;
+			remoteInfo = NSLayoutConstraintExtensionsDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B53AF7271911384000C29B17 /* NSLayoutConstraintExtensionsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSLayoutConstraintExtensionsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53AF72A1911384000C29B17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B53AF72C1911384000C29B17 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B53AF72E1911384000C29B17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B53AF7321911384000C29B17 /* NSLayoutConstraintExtensionsDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSLayoutConstraintExtensionsDemo-Info.plist"; sourceTree = "<group>"; };
+		B53AF7341911384000C29B17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B53AF7361911384000C29B17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B53AF7381911384000C29B17 /* NSLayoutConstraintExtensionsDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraintExtensionsDemo-Prefix.pch"; sourceTree = "<group>"; };
+		B53AF7391911384000C29B17 /* RAFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAFAppDelegate.h; sourceTree = "<group>"; };
+		B53AF73A1911384000C29B17 /* RAFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAFAppDelegate.m; sourceTree = "<group>"; };
+		B53AF73D1911384000C29B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B53AF73F1911384000C29B17 /* RAFMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAFMasterViewController.h; sourceTree = "<group>"; };
+		B53AF7401911384000C29B17 /* RAFMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAFMasterViewController.m; sourceTree = "<group>"; };
+		B53AF7421911384000C29B17 /* RAFDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAFDetailViewController.h; sourceTree = "<group>"; };
+		B53AF7431911384000C29B17 /* RAFDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAFDetailViewController.m; sourceTree = "<group>"; };
+		B53AF7451911384000C29B17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B53AF74B1911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSLayoutConstraintExtensionsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53AF74C1911384000C29B17 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B53AF7541911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSLayoutConstraintExtensionsDemoTests-Info.plist"; sourceTree = "<group>"; };
+		B53AF7561911384000C29B17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B53AF7581911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLayoutConstraintExtensionsDemoTests.m; sourceTree = "<group>"; };
+		B53AF7621911390600C29B17 /* NSLayoutConstraint+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+Extensions.h"; path = "../../Classes/NSLayoutConstraint+Extensions.h"; sourceTree = "<group>"; };
+		B53AF7631911390600C29B17 /* NSLayoutConstraint+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+Extensions.m"; path = "../../Classes/NSLayoutConstraint+Extensions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B53AF7241911384000C29B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53AF72D1911384000C29B17 /* CoreGraphics.framework in Frameworks */,
+				B53AF72F1911384000C29B17 /* UIKit.framework in Frameworks */,
+				B53AF72B1911384000C29B17 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53AF7481911384000C29B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53AF74D1911384000C29B17 /* XCTest.framework in Frameworks */,
+				B53AF74F1911384000C29B17 /* UIKit.framework in Frameworks */,
+				B53AF74E1911384000C29B17 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B53AF71E1911384000C29B17 = {
+			isa = PBXGroup;
+			children = (
+				B53AF7301911384000C29B17 /* NSLayoutConstraintExtensionsDemo */,
+				B53AF7521911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests */,
+				B53AF7291911384000C29B17 /* Frameworks */,
+				B53AF7281911384000C29B17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B53AF7281911384000C29B17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF7271911384000C29B17 /* NSLayoutConstraintExtensionsDemo.app */,
+				B53AF74B1911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B53AF7291911384000C29B17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF72A1911384000C29B17 /* Foundation.framework */,
+				B53AF72C1911384000C29B17 /* CoreGraphics.framework */,
+				B53AF72E1911384000C29B17 /* UIKit.framework */,
+				B53AF74C1911384000C29B17 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B53AF7301911384000C29B17 /* NSLayoutConstraintExtensionsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF7661911391200C29B17 /* Category */,
+				B53AF7671911391F00C29B17 /* Delegate */,
+				B53AF7691911394400C29B17 /* Resources */,
+				B53AF7311911384000C29B17 /* Supporting Files */,
+				B53AF7681911392C00C29B17 /* View Controllers */,
+			);
+			path = NSLayoutConstraintExtensionsDemo;
+			sourceTree = "<group>";
+		};
+		B53AF7311911384000C29B17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF7321911384000C29B17 /* NSLayoutConstraintExtensionsDemo-Info.plist */,
+				B53AF7331911384000C29B17 /* InfoPlist.strings */,
+				B53AF7361911384000C29B17 /* main.m */,
+				B53AF7381911384000C29B17 /* NSLayoutConstraintExtensionsDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B53AF7521911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF7581911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.m */,
+				B53AF7531911384000C29B17 /* Supporting Files */,
+			);
+			path = NSLayoutConstraintExtensionsDemoTests;
+			sourceTree = "<group>";
+		};
+		B53AF7531911384000C29B17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF7541911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests-Info.plist */,
+				B53AF7551911384000C29B17 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B53AF7661911391200C29B17 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF7621911390600C29B17 /* NSLayoutConstraint+Extensions.h */,
+				B53AF7631911390600C29B17 /* NSLayoutConstraint+Extensions.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		B53AF7671911391F00C29B17 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF7391911384000C29B17 /* RAFAppDelegate.h */,
+				B53AF73A1911384000C29B17 /* RAFAppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		B53AF7681911392C00C29B17 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF73F1911384000C29B17 /* RAFMasterViewController.h */,
+				B53AF7401911384000C29B17 /* RAFMasterViewController.m */,
+				B53AF7421911384000C29B17 /* RAFDetailViewController.h */,
+				B53AF7431911384000C29B17 /* RAFDetailViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B53AF7691911394400C29B17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF73C1911384000C29B17 /* Main.storyboard */,
+				B53AF7451911384000C29B17 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B53AF7261911384000C29B17 /* NSLayoutConstraintExtensionsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53AF75C1911384000C29B17 /* Build configuration list for PBXNativeTarget "NSLayoutConstraintExtensionsDemo" */;
+			buildPhases = (
+				B53AF7231911384000C29B17 /* Sources */,
+				B53AF7241911384000C29B17 /* Frameworks */,
+				B53AF7251911384000C29B17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSLayoutConstraintExtensionsDemo;
+			productName = NSLayoutConstraintExtensionsDemo;
+			productReference = B53AF7271911384000C29B17 /* NSLayoutConstraintExtensionsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B53AF74A1911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B53AF75F1911384000C29B17 /* Build configuration list for PBXNativeTarget "NSLayoutConstraintExtensionsDemoTests" */;
+			buildPhases = (
+				B53AF7471911384000C29B17 /* Sources */,
+				B53AF7481911384000C29B17 /* Frameworks */,
+				B53AF7491911384000C29B17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B53AF7511911384000C29B17 /* PBXTargetDependency */,
+			);
+			name = NSLayoutConstraintExtensionsDemoTests;
+			productName = NSLayoutConstraintExtensionsDemoTests;
+			productReference = B53AF74B1911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B53AF71F1911384000C29B17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RAF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Rafal Sroka";
+				TargetAttributes = {
+					B53AF74A1911384000C29B17 = {
+						TestTargetID = B53AF7261911384000C29B17;
+					};
+				};
+			};
+			buildConfigurationList = B53AF7221911384000C29B17 /* Build configuration list for PBXProject "NSLayoutConstraintExtensionsDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B53AF71E1911384000C29B17;
+			productRefGroup = B53AF7281911384000C29B17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B53AF7261911384000C29B17 /* NSLayoutConstraintExtensionsDemo */,
+				B53AF74A1911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B53AF7251911384000C29B17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53AF7461911384000C29B17 /* Images.xcassets in Resources */,
+				B53AF7351911384000C29B17 /* InfoPlist.strings in Resources */,
+				B53AF73E1911384000C29B17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53AF7491911384000C29B17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53AF7571911384000C29B17 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B53AF7231911384000C29B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53AF7411911384000C29B17 /* RAFMasterViewController.m in Sources */,
+				B53AF7641911390600C29B17 /* NSLayoutConstraint+Extensions.m in Sources */,
+				B53AF73B1911384000C29B17 /* RAFAppDelegate.m in Sources */,
+				B53AF7371911384000C29B17 /* main.m in Sources */,
+				B53AF7441911384000C29B17 /* RAFDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B53AF7471911384000C29B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53AF7591911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.m in Sources */,
+				B53AF7651911390600C29B17 /* NSLayoutConstraint+Extensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B53AF7511911384000C29B17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B53AF7261911384000C29B17 /* NSLayoutConstraintExtensionsDemo */;
+			targetProxy = B53AF7501911384000C29B17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B53AF7331911384000C29B17 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53AF7341911384000C29B17 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B53AF73C1911384000C29B17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53AF73D1911384000C29B17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B53AF7551911384000C29B17 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B53AF7561911384000C29B17 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B53AF75A1911384000C29B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B53AF75B1911384000C29B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B53AF75D1911384000C29B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSLayoutConstraintExtensionsDemo/NSLayoutConstraintExtensionsDemo-Prefix.pch";
+				INFOPLIST_FILE = "NSLayoutConstraintExtensionsDemo/NSLayoutConstraintExtensionsDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B53AF75E1911384000C29B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSLayoutConstraintExtensionsDemo/NSLayoutConstraintExtensionsDemo-Prefix.pch";
+				INFOPLIST_FILE = "NSLayoutConstraintExtensionsDemo/NSLayoutConstraintExtensionsDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B53AF7601911384000C29B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSLayoutConstraintExtensionsDemo.app/NSLayoutConstraintExtensionsDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSLayoutConstraintExtensionsDemo/NSLayoutConstraintExtensionsDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NSLayoutConstraintExtensionsDemoTests/NSLayoutConstraintExtensionsDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B53AF7611911384000C29B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSLayoutConstraintExtensionsDemo.app/NSLayoutConstraintExtensionsDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSLayoutConstraintExtensionsDemo/NSLayoutConstraintExtensionsDemo-Prefix.pch";
+				INFOPLIST_FILE = "NSLayoutConstraintExtensionsDemoTests/NSLayoutConstraintExtensionsDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B53AF7221911384000C29B17 /* Build configuration list for PBXProject "NSLayoutConstraintExtensionsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53AF75A1911384000C29B17 /* Debug */,
+				B53AF75B1911384000C29B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B53AF75C1911384000C29B17 /* Build configuration list for PBXNativeTarget "NSLayoutConstraintExtensionsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53AF75D1911384000C29B17 /* Debug */,
+				B53AF75E1911384000C29B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B53AF75F1911384000C29B17 /* Build configuration list for PBXNativeTarget "NSLayoutConstraintExtensionsDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53AF7601911384000C29B17 /* Debug */,
+				B53AF7611911384000C29B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B53AF71F1911384000C29B17 /* Project object */;
+}
