@@ -1,16 +1,7 @@
-##UIView Animation Extensions 
+##NSLayoutConstraint Extensions 
 
-A **useful** category on `UIView` containing a set of most commonly used animations like rotation or flip and others.
+A **useful** category on `NSLayoutConstraint` containing a set of helper methods for creating most commonly used constraints. The category also includes a debugging extension that makes troubleshooting invalid constraints much easier and faster.
 
-It is designed to be **as easy to use as possible to integrate and use** to speed up everyday development tasks. All the methods are well documented and described. 
+It is designed to be **as easy to use as possible to integrate and use** to speed up everyday development tasks. All the methods are well documented and described using doxygen style. 
 
-Furthermore, the category comes along with **a small demo project** where you can see the animations in action. Current version of the category includes following animations:
-
- - Rotation
- - Flip
- - Horizontal Shake
- - Vertical Shake
- - Motion Effects
- - Pulse
- 
- For full documentation and installation instruction visit: [http://wp.me/p4yiBH-wr](http://wp.me/p4yiBH-wr)
+Furthermore, the category comes along with **a small demo project** where you can see how to use helper methods for creating and debugging constraints.
