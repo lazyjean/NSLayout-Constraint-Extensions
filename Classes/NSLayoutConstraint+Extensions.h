@@ -17,7 +17,7 @@
 
 
 /**
- @brief Creates constraints that align center of the view with the center of 
+ @brief Creates constraints that align center of the view with the center of
  the reference view.
  @returns Array of constraints.
  */
@@ -26,21 +26,19 @@
 
 
 /**
- @brief Creates constraints that vertically align center of the view with 
+ @brief Creates constraints that vertically align center of the view with
  the center of the reference view.
- @returns Array of constraints.
  */
-+ (NSArray *)constraintsToCenterVerticallyView:(UIView *)viewToCenter
-                             withReferenceView:(UIView *)referenceView;
++ (NSLayoutConstraint *)constraintsToCenterVerticallyView:(UIView *)viewToCenter
+                                        withReferenceView:(UIView *)referenceView;
 
 
 /**
  @brief Creates constraints that horizontally align center of the view with
  the center of the reference view.
- @returns Array of constraints.
  */
-+ (NSArray *)constraintsToCenterHorizontallyView:(UIView *)viewToCenter
-                               withReferenceView:(UIView *)referenceView;
++ (NSLayoutConstraint *)constraintToCenterHorizontallyView:(UIView *)viewToCenter
+                                         withReferenceView:(UIView *)referenceView;
 
 
 #pragma mark - Filling
@@ -119,7 +117,7 @@
 /**
  @brief Creates constraint that pins height of the view.
  */
-- (NSLayoutConstraint *)constraintToSetHeight:(CGFloat)height
++ (NSLayoutConstraint *)constraintToSetHeight:(CGFloat)height
                                       forView:(UIView *)view;
 
 
@@ -127,7 +125,7 @@
  @brief Creates constraint that pins width and height of the view.
  @returns Array of constraints.
  */
-- (NSArray *)constraintsToSetWidth:(CGFloat)width
++ (NSArray *)constraintsToSetWidth:(CGFloat)width
                          andHeight:(CGFloat)height
                            forView:(UIView *)view;
 

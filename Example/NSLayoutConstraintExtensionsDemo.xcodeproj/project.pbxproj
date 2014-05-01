@@ -15,7 +15,7 @@
 		B53AF73B1911384000C29B17 /* RAFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF73A1911384000C29B17 /* RAFAppDelegate.m */; };
 		B53AF73E1911384000C29B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53AF73C1911384000C29B17 /* Main.storyboard */; };
 		B53AF7411911384000C29B17 /* RAFMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7401911384000C29B17 /* RAFMasterViewController.m */; };
-		B53AF7441911384000C29B17 /* RAFDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7431911384000C29B17 /* RAFDetailViewController.m */; };
+		B53AF7441911384000C29B17 /* RAFCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7431911384000C29B17 /* RAFCenterViewController.m */; };
 		B53AF7461911384000C29B17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53AF7451911384000C29B17 /* Images.xcassets */; };
 		B53AF74D1911384000C29B17 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53AF74C1911384000C29B17 /* XCTest.framework */; };
 		B53AF74E1911384000C29B17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53AF72A1911384000C29B17 /* Foundation.framework */; };
@@ -24,6 +24,12 @@
 		B53AF7591911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7581911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.m */; };
 		B53AF7641911390600C29B17 /* NSLayoutConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7631911390600C29B17 /* NSLayoutConstraint+Extensions.m */; };
 		B53AF7651911390600C29B17 /* NSLayoutConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7631911390600C29B17 /* NSLayoutConstraint+Extensions.m */; };
+		B53AF76C1912483A00C29B17 /* RAFDebuggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF76B1912483A00C29B17 /* RAFDebuggingViewController.m */; };
+		B53AF7721912489F00C29B17 /* RAFFillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF7711912489F00C29B17 /* RAFFillViewController.m */; };
+		B53AF77619124A6700C29B17 /* RAFHeightWidthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF77519124A6700C29B17 /* RAFHeightWidthViewController.m */; };
+		B53AF77719124A6700C29B17 /* RAFHeightWidthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF77519124A6700C29B17 /* RAFHeightWidthViewController.m */; };
+		B53AF77B1912B85C00C29B17 /* RAFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF77A1912B85C00C29B17 /* RAFBaseViewController.m */; };
+		B53AF77C1912B85C00C29B17 /* RAFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AF77A1912B85C00C29B17 /* RAFBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +56,8 @@
 		B53AF73D1911384000C29B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B53AF73F1911384000C29B17 /* RAFMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAFMasterViewController.h; sourceTree = "<group>"; };
 		B53AF7401911384000C29B17 /* RAFMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAFMasterViewController.m; sourceTree = "<group>"; };
-		B53AF7421911384000C29B17 /* RAFDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAFDetailViewController.h; sourceTree = "<group>"; };
-		B53AF7431911384000C29B17 /* RAFDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAFDetailViewController.m; sourceTree = "<group>"; };
+		B53AF7421911384000C29B17 /* RAFCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAFCenterViewController.h; sourceTree = "<group>"; };
+		B53AF7431911384000C29B17 /* RAFCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAFCenterViewController.m; sourceTree = "<group>"; };
 		B53AF7451911384000C29B17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B53AF74B1911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSLayoutConstraintExtensionsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53AF74C1911384000C29B17 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -60,6 +66,14 @@
 		B53AF7581911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLayoutConstraintExtensionsDemoTests.m; sourceTree = "<group>"; };
 		B53AF7621911390600C29B17 /* NSLayoutConstraint+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+Extensions.h"; path = "../../Classes/NSLayoutConstraint+Extensions.h"; sourceTree = "<group>"; };
 		B53AF7631911390600C29B17 /* NSLayoutConstraint+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+Extensions.m"; path = "../../Classes/NSLayoutConstraint+Extensions.m"; sourceTree = "<group>"; };
+		B53AF76A1912483A00C29B17 /* RAFDebuggingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAFDebuggingViewController.h; sourceTree = "<group>"; };
+		B53AF76B1912483A00C29B17 /* RAFDebuggingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAFDebuggingViewController.m; sourceTree = "<group>"; };
+		B53AF7701912489F00C29B17 /* RAFFillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAFFillViewController.h; sourceTree = "<group>"; };
+		B53AF7711912489F00C29B17 /* RAFFillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAFFillViewController.m; sourceTree = "<group>"; };
+		B53AF77419124A6700C29B17 /* RAFHeightWidthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAFHeightWidthViewController.h; sourceTree = "<group>"; };
+		B53AF77519124A6700C29B17 /* RAFHeightWidthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAFHeightWidthViewController.m; sourceTree = "<group>"; };
+		B53AF7791912B85C00C29B17 /* RAFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAFBaseViewController.h; sourceTree = "<group>"; };
+		B53AF77A1912B85C00C29B17 /* RAFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAFBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,10 +192,11 @@
 		B53AF7681911392C00C29B17 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B53AF73F1911384000C29B17 /* RAFMasterViewController.h */,
-				B53AF7401911384000C29B17 /* RAFMasterViewController.m */,
-				B53AF7421911384000C29B17 /* RAFDetailViewController.h */,
-				B53AF7431911384000C29B17 /* RAFDetailViewController.m */,
+				B53AF76E1912486400C29B17 /* Center Example */,
+				B53AF76D1912483E00C29B17 /* Debugging Example */,
+				B53AF76F1912487000C29B17 /* Fill Example */,
+				B53AF77319124A3C00C29B17 /* Height & Width Example */,
+				B53AF77D1912DB4300C29B17 /* Misc */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -193,6 +208,53 @@
 				B53AF7451911384000C29B17 /* Images.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		B53AF76D1912483E00C29B17 /* Debugging Example */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF76A1912483A00C29B17 /* RAFDebuggingViewController.h */,
+				B53AF76B1912483A00C29B17 /* RAFDebuggingViewController.m */,
+			);
+			name = "Debugging Example";
+			sourceTree = "<group>";
+		};
+		B53AF76E1912486400C29B17 /* Center Example */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF7421911384000C29B17 /* RAFCenterViewController.h */,
+				B53AF7431911384000C29B17 /* RAFCenterViewController.m */,
+			);
+			name = "Center Example";
+			sourceTree = "<group>";
+		};
+		B53AF76F1912487000C29B17 /* Fill Example */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF7701912489F00C29B17 /* RAFFillViewController.h */,
+				B53AF7711912489F00C29B17 /* RAFFillViewController.m */,
+			);
+			name = "Fill Example";
+			sourceTree = "<group>";
+		};
+		B53AF77319124A3C00C29B17 /* Height & Width Example */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF77419124A6700C29B17 /* RAFHeightWidthViewController.h */,
+				B53AF77519124A6700C29B17 /* RAFHeightWidthViewController.m */,
+			);
+			name = "Height & Width Example";
+			sourceTree = "<group>";
+		};
+		B53AF77D1912DB4300C29B17 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				B53AF7791912B85C00C29B17 /* RAFBaseViewController.h */,
+				B53AF77A1912B85C00C29B17 /* RAFBaseViewController.m */,
+				B53AF73F1911384000C29B17 /* RAFMasterViewController.h */,
+				B53AF7401911384000C29B17 /* RAFMasterViewController.m */,
+			);
+			name = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,10 +356,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53AF7411911384000C29B17 /* RAFMasterViewController.m in Sources */,
+				B53AF76C1912483A00C29B17 /* RAFDebuggingViewController.m in Sources */,
+				B53AF77619124A6700C29B17 /* RAFHeightWidthViewController.m in Sources */,
+				B53AF77B1912B85C00C29B17 /* RAFBaseViewController.m in Sources */,
 				B53AF7641911390600C29B17 /* NSLayoutConstraint+Extensions.m in Sources */,
+				B53AF7721912489F00C29B17 /* RAFFillViewController.m in Sources */,
 				B53AF73B1911384000C29B17 /* RAFAppDelegate.m in Sources */,
 				B53AF7371911384000C29B17 /* main.m in Sources */,
-				B53AF7441911384000C29B17 /* RAFDetailViewController.m in Sources */,
+				B53AF7441911384000C29B17 /* RAFCenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +372,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53AF7591911384000C29B17 /* NSLayoutConstraintExtensionsDemoTests.m in Sources */,
+				B53AF77C1912B85C00C29B17 /* RAFBaseViewController.m in Sources */,
 				B53AF7651911390600C29B17 /* NSLayoutConstraint+Extensions.m in Sources */,
+				B53AF77719124A6700C29B17 /* RAFHeightWidthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +494,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSLayoutConstraintExtensionsDemo/NSLayoutConstraintExtensionsDemo-Prefix.pch";
 				INFOPLIST_FILE = "NSLayoutConstraintExtensionsDemo/NSLayoutConstraintExtensionsDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -439,6 +508,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSLayoutConstraintExtensionsDemo/NSLayoutConstraintExtensionsDemo-Prefix.pch";
 				INFOPLIST_FILE = "NSLayoutConstraintExtensionsDemo/NSLayoutConstraintExtensionsDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

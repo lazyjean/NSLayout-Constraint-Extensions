@@ -9,7 +9,6 @@
 //  binary, for any purpose, commercial or non-commercial, and by any means.
 //
 
-#import <UIKit/UIKit.h>
 
 @interface RAFMasterViewController : UITableViewController
 

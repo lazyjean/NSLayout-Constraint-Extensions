@@ -9,15 +9,23 @@
 //  binary, for any purpose, commercial or non-commercial, and by any means.
 //
 
+#import "RAFBaseViewController.h"
 
-#import <UIKit/UIKit.h>
 
-#import "RAFAppDelegate.h"
+@implementation RAFBaseViewController
 
-int main(int argc, char * argv[])
+
+- (void)viewDidLoad
 {
-    @autoreleasepool
+    [super viewDidLoad];
+
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"BackgroundTile"]];
+    
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
     {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([RAFAppDelegate class]));
+        self.edgesForExtendedLayout = UIRectEdgeNone;
     }
 }
+
+
+@end

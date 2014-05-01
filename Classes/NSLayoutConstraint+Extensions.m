@@ -22,10 +22,10 @@
 + (NSArray *)constraintsToCenterView:(UIView *)viewToCenter
                    withReferenceView:(UIView *)referenceView
 {
-        return @[[self constraintsToCenterHorizontallyView:viewToCenter
-                                         withReferenceView:referenceView],
-                 [self constraintsToCenterVerticallyView:viewToCenter
-                                       withReferenceView:referenceView]];
+    return @[[self constraintsToCenterHorizontallyView:viewToCenter
+                                     withReferenceView:referenceView],
+             [self constraintsToCenterVerticallyView:viewToCenter
+                                   withReferenceView:referenceView]];
 }
 
 
@@ -33,12 +33,12 @@
                                         withReferenceView:(UIView *)referenceView
 {
     return [NSLayoutConstraint constraintWithItem:viewToCenter
-                                          attribute:NSLayoutAttributeCenterY
-                                          relatedBy:NSLayoutRelationEqual
-                                             toItem:referenceView
-                                          attribute:NSLayoutAttributeCenterY
-                                         multiplier:1.0f
-                                           constant:0.0f];
+                                        attribute:NSLayoutAttributeCenterY
+                                        relatedBy:NSLayoutRelationEqual
+                                           toItem:referenceView
+                                        attribute:NSLayoutAttributeCenterY
+                                       multiplier:1.0f
+                                         constant:0.0f];
 }
 
 
@@ -136,8 +136,8 @@
                                                               edgeInsets:edgeInsets];
     
     NSArray *horizontalConstraints = [self constraintsToFillHorizontallyView:viewToFill
-                                                                withView:view
-                                                              edgeInsets:edgeInsets];
+                                                                    withView:view
+                                                                  edgeInsets:edgeInsets];
     
     NSMutableArray *constraints = [[NSMutableArray alloc] init];
     
@@ -151,7 +151,7 @@
 #pragma mark - Setting width & height
 
 
-- (NSLayoutConstraint *)constraintToSetWidth:(CGFloat)width
++ (NSLayoutConstraint *)constraintToSetWidth:(CGFloat)width
                                      forView:(UIView *)view
 {
     return [NSLayoutConstraint constraintWithItem:view
@@ -164,7 +164,7 @@
 }
 
 
-- (NSLayoutConstraint *)constraintToSetHeight:(CGFloat)height
++ (NSLayoutConstraint *)constraintToSetHeight:(CGFloat)height
                                       forView:(UIView *)view
 {
     return [NSLayoutConstraint constraintWithItem:view
@@ -177,7 +177,7 @@
 }
 
 
-- (NSArray *)constraintsToSetWidth:(CGFloat)width
++ (NSArray *)constraintsToSetWidth:(CGFloat)width
                          andHeight:(CGFloat)height
                            forView:(UIView *)view
 {
@@ -215,24 +215,34 @@
     NSMutableString *description = [self performSelector:@selector(asciiArtDescription)];
 #pragma clang diagnostic pop
     
-    NSMutableString *extendedDescripton = [NSMutableString stringWithFormat:@"%@, ", description];
+    // Create a string with ASCII description (if any).
+    NSMutableString *extendedDescripton = description.length ?
+    [NSMutableString stringWithFormat:@"%@, ", description] :
+    [[NSMutableString alloc] init];
     
+    // Get the views that make the constraint.
     UIView *firstView = (UIView *)[self firstItem];
+    UIView *secondView = (UIView *)[self secondItem];
     
+    // Create developer friendly descriptions using accessibility labels.
     if (firstView)
     {
-        [description appendFormat:@"First view (0x%0x): %@, ", (int)firstView, firstView.accessibilityLabel];
+        [extendedDescripton appendFormat:@"First view is %@ (0x%0x)", firstView.accessibilityLabel, (int)firstView];
     }
-    
-    UIView *secondView = (UIView *)[self secondItem];
     
     if (secondView)
     {
-        [description appendFormat:@"Second View (0x%0x): %@", (int)secondView, secondView.accessibilityLabel];
+        if (firstView)
+        {
+            [extendedDescripton appendString:@", "];
+        }
+        
+        [extendedDescripton appendFormat:@"Second View is %@ (0x%0x)", secondView.accessibilityLabel, (int)secondView];
     }
     
     return extendedDescripton;
 }
+
 
 #endif
 

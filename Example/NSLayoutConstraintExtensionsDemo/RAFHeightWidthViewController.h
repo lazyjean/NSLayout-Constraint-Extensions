@@ -9,11 +9,9 @@
 //  binary, for any purpose, commercial or non-commercial, and by any means.
 //
 
-#import <UIKit/UIKit.h>
+#import "RAFBaseViewController.h"
 
-@interface RAFDetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@interface RAFHeightWidthViewController : RAFBaseViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end
