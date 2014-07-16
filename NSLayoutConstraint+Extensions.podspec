@@ -15,7 +15,7 @@ Furthermore, the category comes along with **a small demo project** where you ca
 
                    DESC
 
-  s.homepage     = "https://github.com/r3econ/NSLayout-Constraint-Extensions"
+  s.homepage     = "http://stunningco.de/2014/07/15/introducing-nslayoutconstraint-extensions/"
   s.license      = "CC0"
 
   s.author             = { "Rafal Sroka" => "rafal.sroka.it@gmail.com" }
