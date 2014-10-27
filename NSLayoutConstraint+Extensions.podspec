@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NSLayoutConstraint+Extensions"
-  s.version      = "1.0.0"
+  s.version      = "1.0.2"
   s.summary      = "NSLayoutConstraint Extensions containins a set of helper methods for creating most commonly used constraints and debugging them."
 
   s.description  = <<-DESC
@@ -23,7 +23,7 @@ Furthermore, the category comes along with **a small demo project** where you ca
 
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "https://github.com/r3econ/NSLayout-Constraint-Extensions.git", :tag => "1.0.1" }
+  s.source       = { :git => "https://github.com/r3econ/NSLayout-Constraint-Extensions.git", :tag => "1.0.2" }
 
   s.source_files  = "Classes", "Classes/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
