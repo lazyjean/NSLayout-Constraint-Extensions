@@ -23,7 +23,7 @@ Furthermore, the category comes along with **a small demo project** where you ca
 
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "https://github.com/r3econ/NSLayout-Constraint-Extensions.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/r3econ/NSLayout-Constraint-Extensions.git", :tag => "1.0.1" }
 
   s.source_files  = "Classes", "Classes/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
